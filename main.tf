@@ -13,4 +13,9 @@ provider "aws" {
 
 resource "aws_s3_bucket" "satyajeet_version_bucket" {
   bucket = "satyajeet-proj6-version-bucket"
+
+  tags = {
+    Name        = "satyajeet-version-tracked-bucket"
+    Environment = "Assessment"
+  }
 }
